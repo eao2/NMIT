@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg{
+    background-image: url(./bg.png);
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    /* position: relative; */
+}
+
+.g1{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: auto;
+    width: 60vw;
+    animation: 3s infinite alternate slideup;
+}
+
+@keyframes slideup{
+    from {
+        bottom: 0px;
+      }
+    
+      to {
+        bottom: -20px;
+      }
+}
+
+.g2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: auto;
+    width: 60vw;
+    animation: 12s infinite alternate slideup1;
+}
+
+@keyframes slideup1{
+    from {
+        top: 0px;
+        right: 0%;
+      }
+    
+      to {
+        top: -20px;
+        right: -20px;
+      }
+}
+
+.g3{
+    position: absolute;
+    right: 7%;
+    bottom: 5%;
+    height: auto;
+    width: 15vw;
+    animation: 5s infinite alternate slide3;
+}
+
+@keyframes slide3{
+    from {
+        right: 7%;
+        bottom: 5%;
+      }
+    
+      to {
+        right: 7%;
+        bottom: 7%;
+      }
+}
+
+
+.g4{
+    position: absolute;
+    z-index: 10;
+    left: 12%;
+    top: 25%;
+    height: auto;
+    width: 12vw;
+    animation: 10s infinite alternate slide4;
+}
+
+@keyframes slide4{
+    from {
+        left: 12%;
+        top: 25%;
+      }
+    
+      to {
+        left: calc(12% + 1%);
+        top: calc(25% - 2%);
+      }
+}
+
+
+.g5{
+    position: absolute;
+    right: 20%;
+    top: 15%;
+    height: auto;
+    width: 10vw;
+    transform: rotate(360deg);
+    animation: 45s infinite slide5;
+}
+
+@keyframes slide5{
+    from {
+        right: 20%;
+        top: 15%;
+        transform: rotate(0deg);
+      }
+    
+      to {
+        right: 20%;
+        top: 15%;
+        transform: rotate(360deg);
+      }
+}
